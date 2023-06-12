@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  grid-template-rows: 1fr 7rem;
+}
+
+nav {
+  grid-area: 1/1/2/2;
+  background-color: brown;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+nav ul li {
+  background-color: grey;
+  aspect-ratio: 1/1;
+}
+
+nav ul li{
+  background-color: grey;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+nav ul li:last-child{
+  margin-top: auto;
+}
+.control {
+  grid-area: 2/3/4/1;
+  background-color: aqua;
+}
+
+.list {
+  background-color: chartreuse;
+}
