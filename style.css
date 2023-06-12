@@ -19,7 +19,7 @@ main {
 
 nav {
   grid-area: 1/1/2/2;
-  background-color: brown;
+  background-color: rgb(20, 20, 20);
 }
 
 nav ul {
@@ -30,28 +30,35 @@ nav ul {
   padding: 3px;
 }
 
-nav ul li {
-  background-color: grey;
-  aspect-ratio: 1/1;
-}
 
 nav ul li{
-  background-color: grey;
+  aspect-ratio: 1/1;
   border-radius: 3px;
   margin-bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: rgb(60, 60, 60);
 }
 
 nav ul li:last-child{
   margin-top: auto;
 }
+
+nav ul li:nth-child(7){
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 .control {
   grid-area: 2/3/4/1;
-  background-color: aqua;
+  background-color: rgb(35, 35, 35);
+  border-top: 1px solid rgba(12, 12, 12, 0.5);
 }
 
 .list {
-  background-color: chartreuse;
+  background-color: rgb(30, 30, 30);
 }
